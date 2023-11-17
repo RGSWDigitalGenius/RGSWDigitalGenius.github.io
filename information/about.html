@@ -15,8 +15,20 @@
             </nav>
 
             <div class="text-box">
-                <h1>Meet the Squad</h1>
-                <p id="text"></p>
+                <h1>About Us</h1>
+                <p>
+                    Digital Genius is a group which has been formed to help out with technical issues in the classroom or any enviroment that is adequate.
+                    <br>
+                    Us members have tasks to do, in order to add to the school cooperatively in a positive way..
+                    <br><br>
+                    One of our ongoing projects is the "Tech Museum" which can be located <a href="../index.html" style="color: white; font-style: normal;" >here</a>
+                    <br>
+                    For future reference, the Tech Museum is in <b>Calder</b>. Please note that we have not fully completed this project.
+                    <br><br>
+                    <i style="font-size: larger;">Many more things to come...</i>
+                </p>
+                <br>
+                <a href="../index.html" class="hero-btn">BACK</a>
             </div>
         </section>
         
@@ -32,20 +44,6 @@
             function hideMenu() {
                 navLinks.style.right = "-200px";
             }
-
-            // JS for typewriter style
-            var i = 0;
-            var txt = `Coming Soon...`;
-            var speed = 60;
-
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("text").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
-                }
-            }
-            window.onload = typeWriter;
         </script>
     </body>
 </html>
@@ -110,10 +108,11 @@
         border: 1px solid #fff;
     }
     .hero-btn:hover{
-        border: 3px solid #fff;
+        background: #fff;
+        color: black;
         transition: 1s;
     }
     .hero-btn:active{
-        transform: scale(50);
+        transform: scale(3);
     }
 </style>
