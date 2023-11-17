@@ -17,7 +17,7 @@
                 <h1>Welcome</h1>
                 <p id="text"></p>
                 <a href="pages/ibook.html" class="hero-btn">TECH MUSEUM</a>
-                <a href="information/squad.html" class="hero-btn">MEET THE SQUAD</a>
+                <a href="information/about.html" class="hero-btn">ABOUT US</a>
             </div>
         </section>
         
@@ -36,17 +36,17 @@
 
             // JS for typewriter style
             var i = 0;
-            var txt = `RGSW Digital Genius : Site Version 0.2`;
+            var string = `RGSW Digital Genius : Site Version 0.2`;
             var speed = 30;
 
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("text").innerHTML += txt.charAt(i);
+            function type() {
+                if (i < string.length) {
+                    document.getElementById("text").innerHTML += string.charAt(i);
                     i++;
-                    setTimeout(typeWriter, speed);
+                    setTimeout(type, speed);
                 }
             }
-            window.onload = typeWriter;
+            window.onload = type;
         </script>
     </body>
 </html>
@@ -62,8 +62,7 @@
         min-height: 100vh;
         height: 100%;
         width: 100%;
-        background-color: #005e45;
-        /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.jpg); */
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.774)),url(images/banner.jpg);
         background-position: center;
         background-size: cover;
         position: relative;
@@ -111,10 +110,11 @@
         border: 1px solid #fff;
     }
     .hero-btn:hover{
-        border: 3px solid #fff;
+        background: #fff;
+        color: black;
         transition: 1s;
     }
     .hero-btn:active{
-        transform: scale(50);
+        transform: scale(3);
     }
 </style>
