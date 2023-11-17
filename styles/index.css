@@ -63,3 +63,22 @@ nav img{
 .hero-btn:active{
     transform: scale(3);
 }
+
+.alertBanner {
+    background-color: #005e45;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: #005e45a1 5px solid;
+    position: sticky;
+  }
+
+.alertText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
