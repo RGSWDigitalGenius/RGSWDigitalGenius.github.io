@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>RGSW Digital Genius</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="../index.html"><img src="../images/DLP_footer_logo.png"></a>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Meet the Squad</h1>
+                <p id="text"></p>
+            </div>
+        </section>
+        
+        <!---------JavaScript for Toggle Menu--------->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+            // JS for typewriter style
+            var i = 0;
+            var txt = `RGSW Digital Genius : Site Version 0.2`;
+            var speed = 30;
+
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("text").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            window.onload = typeWriter;
+        </script>
+    </body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+    }
+
+    .header{
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        background-color: #005e45;
+        /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.jpg); */
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img{
+        width: 200px;
+    }
+
+    .text-box{
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 66px;
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 17px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid #fff;
+    }
+    .hero-btn:hover{
+        border: 3px solid #fff;
+        transition: 1s;
+    }
+    .hero-btn:active{
+        transform: scale(50);
+    }
+</style>
