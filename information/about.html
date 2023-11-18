@@ -9,6 +9,11 @@
     </head>
     <body>
         <section class="header">
+            <div class="alertBanner">
+                <p class="alertText">
+                    This site is still in development. Please report any bugs to the developer.
+                </p>
+            </div>
             <nav>
                 <a href="../index.html"><img src="../images/DLP_footer_logo.png"></a>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -31,20 +36,6 @@
                 <a href="../index.html" class="hero-btn">BACK</a>
             </div>
         </section>
-        
-        <!---------JavaScript for Toggle Menu--------->
-
-        <script>
-            var navLinks = document.getElementById("navLinks");
-
-            function showMenu() {
-                navLinks.style.right = "0";
-            }
-
-            function hideMenu() {
-                navLinks.style.right = "-200px";
-            }
-        </script>
     </body>
 </html>
 
@@ -114,5 +105,24 @@
     }
     .hero-btn:active{
         transform: scale(3);
+    }
+
+    .alertBanner {
+        background-color: #005e45;
+        margin-bottom: 5px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: #005e45a1 5px solid;
+        position: sticky;
+    }
+
+    .alertText {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
     }
 </style>
