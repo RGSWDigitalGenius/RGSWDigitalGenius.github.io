@@ -27,33 +27,5 @@
                 <a href="information/about.html" class="hero-btn">ABOUT US</a>
             </div>
         </section>
-        
-        <!---------JavaScript for Toggle Menu--------->
-
-        <script>
-            var navLinks = document.getElementById("navLinks");
-
-            function showMenu() {
-                navLinks.style.right = "0";
-            }
-
-            function hideMenu() {
-                navLinks.style.right = "-200px";
-            }
-
-            // JS for typewriter style
-            var i = 0;
-            var string = `RGSW Digital Genius : Site Version 0.2`;
-            var speed = 30;
-
-            function type() {
-                if (i < string.length) {
-                    document.getElementById("text").innerHTML += string.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                }
-            }
-            window.onload = type;
-        </script>
     </body>
 </html>
