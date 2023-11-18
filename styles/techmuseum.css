@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: monospace;
+    color: white;
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 35vh;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.774)),url(../images/banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.774)),url('https://google.com/');
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.video{
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.774))
 }
 
 nav{
@@ -81,4 +86,31 @@ nav img{
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+}
+
+.devices{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-size: large;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 31%;
+    background: #005e45;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
