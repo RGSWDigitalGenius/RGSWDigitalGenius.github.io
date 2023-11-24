@@ -82,3 +82,20 @@ nav img{
     font-weight: bold;
     text-align: center;
 }
+
+@media(max-width: 700px){
+    nav img{
+        width: 150px;
+    }
+
+    .text-box h1{
+        font-size: 55px;
+    }
+    .text-box p{
+        font-size: 17px;
+    }
+
+    .alertText{
+        font-size: 12px;
+    }
+}
