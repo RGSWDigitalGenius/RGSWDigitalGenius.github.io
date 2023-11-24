@@ -130,6 +130,10 @@ nav img{
     text-align: center;
 }
 
+.box-thumbnails {
+    border-radius: 20px;
+}
+
 @media(max-width: 700px){
     .row{
         flex-direction: column;
