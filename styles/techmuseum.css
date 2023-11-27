@@ -104,7 +104,7 @@ nav img{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10px;
     font-size: large;
 }
 
@@ -118,7 +118,7 @@ nav img{
     flex-basis: 31%;
     background: #005e45;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
