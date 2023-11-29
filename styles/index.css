@@ -135,6 +135,7 @@ nav img{
 }
   
 .form-container .btn {
+    border-radius: 20px;
     background-color: #04AA6D;
     color: white;
     padding: 16px 20px;
