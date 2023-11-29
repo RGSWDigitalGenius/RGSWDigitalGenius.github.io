@@ -45,6 +45,7 @@ nav img{
 }
 
 .hero-btn{
+    border-radius: 20px;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -58,7 +59,7 @@ nav img{
 }
 .hero-btn:hover{
     background: #fff;
-    color: black;
+    color: blak;
     transition: 1s;
     animation: shake 0.5s;
 

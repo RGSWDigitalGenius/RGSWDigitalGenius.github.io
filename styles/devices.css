@@ -52,6 +52,7 @@ nav img{
 }
 
 .hero-btn{
+    border-radius: 20px;
     display: inline-block;
     text-decoration: none;
     color: #fff;
