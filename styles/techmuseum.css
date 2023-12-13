@@ -59,7 +59,7 @@ nav img{
 }
 .hero-btn:hover{
     background: #fff;
-    color: blak;
+    color: black;
     transition: 1s;
     animation: shake 0.5s;
 
