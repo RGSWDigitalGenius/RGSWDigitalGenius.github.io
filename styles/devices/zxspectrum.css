@@ -8,7 +8,7 @@
     min-height: 50vh;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.774)),url(../images/zxspectrum.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.774)),url(../../images/zxspectrum.png);
     background-position: center;
     background-size: cover;
     position: relative;
