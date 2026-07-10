@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <a href="index.html" class="flex items-center gap-3 group">
             <img src="/images/logo.png" alt="Digital Genius Logo" 
                  class="w-7 h-7 sm:w-8 sm:h-8 object-contain opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-300">
-            <span class="text-lg sm:text-xl font-bold tracking-tight bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent hover:scale-105 transition-all duration-300">
+            <span class="text-lg sm:text-xl font-bold tracking-tight bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">
               Digital Genius
             </span>
+            <p class="text-gray-400">Development Build</p>
           </a>
 
           <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-6 text-xs sm:text-sm font-medium text-gray-300">
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="flex items-center gap-8 flex-col sm:flex-row">
           <div class="flex gap-6">
             <a href="https://rgsw.org.uk/" class="hover:text-emerald-400 transition-colors">RGS Site</a>
+            <a href="/about.html" class="hover:text-emerald-400 transition-colors">Learn more</a>
           </div>
           <img src="/images/DLP_footer_logo.png" alt="DLP Logo" class="w-24 h-auto opacity-60 hover:opacity-100 transition-opacity duration-300">
         </div>
@@ -58,6 +60,7 @@ function buildBreadcrumbs(path) {
   if (path.includes("museum.html")) pageName = "Tech Museum";
   if (path.includes("about.html")) pageName = "About";
   if (path.includes("getinvolved.html")) pageName = "Get Involved";
+  if (path.includes("museum-item.html")) pageName = "Museum Item"
 
   container.innerHTML = `
     <nav class="text-xs font-medium tracking-wide text-gray-400 uppercase flex justify-center gap-2 items-center mb-6">
@@ -176,3 +179,77 @@ function closeExternalWarning() {
   modal.classList.add("opacity-0", "pointer-events-none");
   box.classList.add("scale-95");
 }
+
+// (function () {
+//   const canvas = document.getElementById('bg-network');
+//   const ctx = canvas.getContext('2d');
+//   let w, h, particles;
+
+//   const DOT_COLOR = '34, 197, 94';   // matches your green theme
+//   const LINE_COLOR = '34, 197, 94';
+//   const COUNT = 55;
+//   const MAX_DIST = 140;
+//   const SPEED = 0.6;
+
+//   function resize() {
+//     w = canvas.width = window.innerWidth;
+//     h = canvas.height = window.innerHeight;
+//   }
+
+//   function makeParticles() {
+//     particles = [];
+//     for (let i = 0; i < COUNT; i++) {
+//       particles.push({
+//         x: Math.random() * w,
+//         y: Math.random() * h,
+//         vx: (Math.random() - 0.5) * SPEED,
+//         vy: (Math.random() - 0.5) * SPEED,
+//         r: Math.random() * 1.2 + 0.6
+//       });
+//     }
+//   }
+
+//   function step() {
+//     ctx.clearRect(0, 0, w, h);
+
+//     for (const p of particles) {
+//       p.x += p.vx;
+//       p.y += p.vy;
+//       if (p.x < 0 || p.x > w) p.vx *= -1;
+//       if (p.y < 0 || p.y > h) p.vy *= -1;
+
+//       ctx.beginPath();
+//       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+//       ctx.fillStyle = `rgba(${DOT_COLOR}, 0.5)`;
+//       ctx.fill();
+//     }
+
+//     for (let i = 0; i < particles.length; i++) {
+//       for (let j = i + 1; j < particles.length; j++) {
+//         const a = particles[i], b = particles[j];
+//         const dx = a.x - b.x, dy = a.y - b.y;
+//         const dist = Math.sqrt(dx * dx + dy * dy);
+//         if (dist < MAX_DIST) {
+//           const alpha = (1 - dist / MAX_DIST) * 0.25;
+//           ctx.beginPath();
+//           ctx.moveTo(a.x, a.y);
+//           ctx.lineTo(b.x, b.y);
+//           ctx.strokeStyle = `rgba(${LINE_COLOR}, ${alpha})`;
+//           ctx.lineWidth = 0.6;
+//           ctx.stroke();
+//         }
+//       }
+//     }
+
+//     requestAnimationFrame(step);
+//   }
+
+//   window.addEventListener('resize', () => {
+//     resize();
+//     makeParticles();
+//   });
+
+//   resize();
+//   makeParticles();
+//   step();
+// })();
