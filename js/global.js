@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
             <a href="museum.html" class="hover:text-emerald-400 transition-colors">Tech Museum</a>
             <a href="about.html" class="hover:text-emerald-400 transition-colors">About</a>
+            <a href="techtrail.html" class="text-emerald-400 hover:text-emerald-300 transition-colors">Tech Trail</a>
             <a href="getinvolved.html" class="text-emerald-400 hover:text-emerald-300 transition-colors">Get Involved</a>
           </nav>
           
