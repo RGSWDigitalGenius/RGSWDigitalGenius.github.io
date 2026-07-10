@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
 
           <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-6 text-xs sm:text-sm font-medium text-gray-300">
-            <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+            <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
             <a href="museum.html" class="hover:text-emerald-400 transition-colors">Tech Museum</a>
             <a href="about.html" class="hover:text-emerald-400 transition-colors">About</a>
             <a href="getinvolved.html" class="text-emerald-400 hover:text-emerald-300 transition-colors">Get Involved</a>
