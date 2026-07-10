@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Digital Genius | Home</title>
+  
+  <meta name="theme-color" content="#030706" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#030706">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body class="flex flex-col justify-between min-h-screen md:h-screen relative">
+
+  <main class="w-full max-w-5xl mx-auto px-6 pt-12 md:pt-20 pb-6 flex-grow flex flex-col justify-center items-center text-center max-h-full md:justify-around">
+    
+    <div class="mb-4 md:mb-6 flex flex-col items-center gap-2 md:gap-3">
+      <span class="animate-float float-slow text-[11px] uppercase font-bold tracking-[0.2em] text-emerald-400 block">
+        Welcome To
+      </span>
+      
+      <h1 class="animate-float float-slow float-delay-1 text-4xl md:text-6xl font-extrabold text-white tracking-tight bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent leading-tight pb-1">
+        Digital Genius
+      </h1>
+
+      <p class="animate-float float-slow float-delay-2 text-sm md:text-base text-gray-400 max-w-md mx-auto leading-relaxed px-4">
+        The student-powered technology club at RGS Worcester.
+      </p>
+
+      <button onclick="window.location.href = '/about.html'" 
+              class="mt-1 px-4 py-1.5 rounded-full bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 text-xs text-emerald-400 font-medium transition-all duration-300 flex items-center gap-1.5 backdrop-blur-sm shadow-sm group">
+        <span>Learn more</span>
+        <span class="text-sm transition-transform group-hover:translate-x-1">&rarr;</span>
+      </button>
+    </div>
+
+    <div id="content-start" class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 max-w-4xl mx-auto">
+      <div id="homepage-cards" class="contents"></div>
+    </div>
+  </main>
+
+  <script src="js/global.js" defer></script>
+  <script src="js/home.js" defer></script>
+</body>
+</html>
